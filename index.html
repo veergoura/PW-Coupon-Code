@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Physics Wallah Special Coupon</title>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+min-height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background:linear-gradient(135deg,#0f0c29,#302b63,#24243e);
+color:white;
+padding:20px;
+overflow-x:hidden;
+}
+
+/* Background glow */
+body::before{
+content:'';
+position:absolute;
+width:400px;
+height:400px;
+background:#ffb347;
+filter:blur(180px);
+top:-100px;
+left:-100px;
+opacity:.4;
+}
+
+body::after{
+content:'';
+position:absolute;
+width:400px;
+height:400px;
+background:#ff416c;
+filter:blur(180px);
+bottom:-100px;
+right:-100px;
+opacity:.4;
+}
+
+/* Container */
+.container{
+width:100%;
+max-width:1000px;
+backdrop-filter:blur(20px);
+background:rgba(255,255,255,0.08);
+border-radius:24px;
+padding:40px 30px;
+box-shadow:0 10px 40px rgba(0,0,0,0.4);
+animation:fadeUp 1s ease;
+text-align:center;
+}
+
+/* Animation */
+@keyframes fadeUp{
+from{opacity:0; transform:translateY(40px);}
+to{opacity:1; transform:translateY(0);}
+}
+
+.logo{
+font-size:26px;
+font-weight:700;
+letter-spacing:2px;
+margin-bottom:10px;
+}
+
+.subtitle{
+font-size:18px;
+opacity:.8;
+margin-bottom:10px;
+}
+
+.title{
+font-size:40px;
+font-weight:700;
+margin-bottom:20px;
+background:linear-gradient(45deg,#ffd89b,#19547b);
+-webkit-background-clip:text;
+color:transparent;
+}
+
+/* Vishwas Divas badge */
+.badge{
+display:inline-block;
+padding:8px 18px;
+background:linear-gradient(45deg,#ff416c,#ff4b2b);
+border-radius:50px;
+font-size:14px;
+margin-bottom:25px;
+}
+
+/* Coupon box */
+.coupon-box{
+margin:20px auto;
+padding:25px;
+border-radius:16px;
+background:linear-gradient(45deg,#8E2DE2,#4A00E0);
+box-shadow:0 10px 30px rgba(0,0,0,0.4);
+}
+
+.coupon-text{
+font-size:16px;
+opacity:.9;
+margin-bottom:10px;
+}
+
+.coupon-code{
+font-size:38px;
+font-weight:700;
+letter-spacing:4px;
+background:white;
+color:#4A00E0;
+padding:10px 20px;
+border-radius:10px;
+display:inline-block;
+animation:pulse 2s infinite;
+}
+
+@keyframes pulse{
+0%{transform:scale(1);}
+50%{transform:scale(1.05);}
+100%{transform:scale(1);}
+}
+
+.desc{
+margin-top:15px;
+opacity:.8;
+}
+
+/* Category grid */
+.categories{
+margin-top:30px;
+display:flex;
+flex-wrap:wrap;
+gap:12px;
+justify-content:center;
+}
+
+.cat{
+padding:10px 18px;
+border-radius:40px;
+background:rgba(255,255,255,0.1);
+border:1px solid rgba(255,255,255,0.2);
+font-size:14px;
+transition:.3s;
+}
+
+.cat:hover{
+background:white;
+color:black;
+transform:translateY(-3px);
+}
+
+/* Button */
+.btn{
+margin-top:30px;
+display:inline-block;
+padding:14px 28px;
+border-radius:50px;
+background:linear-gradient(45deg,#ff416c,#ff4b2b);
+text-decoration:none;
+color:white;
+font-weight:600;
+transition:.3s;
+}
+
+.btn:hover{
+transform:scale(1.05);
+box-shadow:0 10px 25px rgba(0,0,0,0.4);
+}
+
+/* Responsive */
+@media(max-width:768px){
+
+.title{font-size:28px;}
+.coupon-code{font-size:26px;}
+.container{padding:30px 20px;}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="logo">PHYSICS WALLAH</div>
+<!-- <div class="subtitle"> Vishwas Diwas Special Discount 2026</div> -->
+
+<div class="title">Universal Coupon Access</div>
+
+<div class="badge">✨ Vishwas Divas Special Offer</div>
+
+<div class="coupon-box">
+<div class="coupon-text">Use Coupon Code</div>
+<div class="coupon-code">SKGA347</div>
+<div class="desc">Applicable on ALL Physics Wallah courses</div>
+</div>
+
+<div class="categories">
+<div class="cat">IIT-JEE</div>
+<div class="cat">NEET</div>
+<div class="cat">UPSC</div>
+<div class="cat">GATE</div>
+<div class="cat">DEFENCE</div>
+<div class="cat">MBA</div>
+<div class="cat">CA</div>
+<div class="cat">SSC</div>
+<div class="cat">CLASS 6-10</div>
+<div class="cat">SKILLS</div>
+</div>
+
+<a href="#" class="btn">Apply Coupon Now</a>
+
+</div>
+
+</body>
+</html>
